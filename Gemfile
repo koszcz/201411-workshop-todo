@@ -30,6 +30,8 @@ gem 'slim'
 
 gem 'tzinfo-data'
 
+gem 'devise'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
