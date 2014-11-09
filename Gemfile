@@ -28,7 +28,9 @@ gem 'spring',        group: :development
 
 gem 'slim'
 
-gem 'tzinfo-data'
+# gem 'tzinfo-data'
+
+gem 'carrierwave'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

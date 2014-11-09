@@ -1,6 +1,16 @@
-h1 List:==@list.name
-p ID: ==@list.id
-p  Created: == @list.created_at
+h1
+  | List:
+  = @list.name
+p
+  | ID:
+  =@list.id
+
+p
+  | Created:
+  =@list.created_at
+
+== image_tag(@list.avatar_url) if @list.avatar?
+
 ==link_to("Back", lists_path)
 
 h3 Actions
@@ -23,3 +33,4 @@ ol
   ==f.label :name
   == f.text_field :name
   == f.submit
+
