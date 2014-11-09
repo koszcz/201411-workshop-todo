@@ -1,0 +1,12 @@
+- if @list.errors.any?
+	p Validation errors
+	ul
+	- @list.errors.full_messages.each do |error|
+		li== error
+
+== form_for @list do |f|
+	== f.label :name
+	== f.text_field :name
+	== f.submit
+
+== link_to "Back", lists_path
